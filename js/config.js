@@ -1,6 +1,6 @@
 // ====== CONFIGURACION GENERAL (edita aqui) ======
 const CFG = {
-  APPS_SCRIPT_URL: "PEGA_AQUI_LA_URL_DE_TU_APPS_SCRIPT", // termina en /exec
+  APPS_SCRIPT_URL: "https://script.google.com/macros/s/AKfycbzkz2F7hjUUCSv7B3CrZsFn7YQ7X4StOa5sUft696eme4nMGQIumUc1hngxF0Vb5hvfiQ/exec", // termina en /exec
   DURACION_MS: 8000,                 // tiempo de cada estimulo
   IDT: { dispersion: 80, minDur: 100 }, // I-DT: px de dispersion y ms minimos de fijacion
   // aoi en coordenadas normalizadas de la imagen (0 a 1): x, y, w, h

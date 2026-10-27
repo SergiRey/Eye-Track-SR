@@ -20,3 +20,5 @@ fieldset{border:1px solid var(--linea);border-radius:8px;margin:1.2em 0;padding:
 #cruz{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-size:64px;font-weight:200}
 #stim{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}
 canvas{max-width:100%;border:1px solid var(--linea);background:#fff}
+#dot, #txt { z-index: 2147483647; }
+#webgazerVideoContainer { opacity: .55; pointer-events: none; }
