@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Estudio de exploración visual</title><link rel="stylesheet" href="css/estilos.css"></head><body><main>
+<h1>Estudio de exploración visual</h1>
+<p>Vas a ver ocho imágenes en pantalla completa mientras tu cámara estima hacia dónde miras. Dura unos 5 minutos.</p>
+<h2>Antes de empezar</h2>
+<ul><li>Usa una laptop, con la pantalla a unos 50–60 cm de tu cara.</li><li>Siéntate de frente a la cámara, con luz en tu rostro y no a tus espaldas.</li><li>Procura no mover la cabeza durante la prueba.</li></ul>
+<h2>Privacidad</h2>
+<p>El video no se graba ni se sube a internet: se procesa en tu navegador y solo se guardan coordenadas de mirada, métricas y tus respuestas. Tu participación es voluntaria y puedes salir cuando quieras.</p>
+<label for="id">Código de participante</label><input id="id" type="text" placeholder="P01">
+<label for="edad">Edad</label><input id="edad" type="number" min="15" max="99">
+<label for="carrera">Carrera</label><input id="carrera" type="text">
+<label class="chk"><input id="ok" type="checkbox"> Acepto participar y que se use mi cámara como se describe arriba.</label>
+<button id="go" disabled>Continuar a la calibración</button>
+<p class="nota" id="aviso"></p>
+</main>
+<script>
+const ok=document.getElementById('ok'),go=document.getElementById('go'),id=document.getElementById('id');
+if(!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia)document.getElementById('aviso').textContent='Este navegador no permite usar la cámara. Prueba con Chrome o Edge actualizados.';
+const chk=()=>go.disabled=!(ok.checked&&id.value.trim());ok.onchange=id.oninput=chk;
+go.onclick=()=>{sessionStorage.clear();sessionStorage.setItem('eyet_sujeto',JSON.stringify({id:id.value.trim(),fecha:new Date().toISOString(),
+ edad:document.getElementById('edad').value,carrera:document.getElementById('carrera').value,
+ pantalla:`${screen.width}x${screen.height}@${devicePixelRatio}`,navegador:navigator.userAgent}));location.href='calibracion.html';};
+</script></body></html>

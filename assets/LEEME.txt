@@ -1,0 +1,1 @@
+Pon aqui tus 8 imagenes: comercial_16-9.jpg, comercial_9-16.jpg, interfaz_16-9.jpg, interfaz_9-16.jpg, ocio_16-9.jpg, ocio_9-16.jpg, infografia_16-9.jpg, infografia_9-16.jpg. Si faltan, la prueba usa un marcador gris.

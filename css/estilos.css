@@ -1,0 +1,22 @@
+:root{--fondo:#e9eef2;--tinta:#1d2a33;--suave:#5a6b78;--acento:#2347c5;--linea:#c3ced6}
+*{box-sizing:border-box}[hidden]{display:none!important}
+body{margin:0;font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--fondo);color:var(--tinta)}
+main{max-width:660px;margin:0 auto;padding:40px 20px}
+h1{font-size:1.9rem;line-height:1.15;margin:0 0 .4em}h2{font-size:1.2rem;margin:1.6em 0 .4em}
+p,li{max-width:62ch}.nota{color:var(--suave);font-size:.9rem}
+label{display:block;margin:.8em 0 .25em;font-weight:600}
+input[type=text],input[type=number],select,textarea{width:100%;padding:.6em .7em;border:1px solid var(--linea);border-radius:6px;font:inherit;background:#fff}
+.chk{display:flex;gap:.6em;align-items:flex-start;font-weight:400;margin:.7em 0}
+.chk input{margin-top:.35em}
+button,.btn{background:var(--acento);color:#fff;border:0;border-radius:6px;padding:.7em 1.3em;font:inherit;font-weight:600;cursor:pointer;margin:.3em .4em .3em 0}
+button.sec{background:#fff;color:var(--acento);border:1px solid var(--acento)}
+button:disabled{opacity:.4;cursor:not-allowed}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #9bb0f5;outline-offset:2px}
+fieldset{border:1px solid var(--linea);border-radius:8px;margin:1.2em 0;padding:.6em 1.1em 1em}legend{font-weight:700;padding:0 .4em}
+.oscuro{background:#000;color:#ddd;height:100vh;width:100vw;overflow:hidden;position:relative}
+.centro{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px}
+.centro p{max-width:56ch}
+#dot{position:absolute;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;background:#fff;border:5px solid var(--acento);cursor:pointer;opacity:.3}
+#txt{position:absolute;left:0;right:0;bottom:14px;text-align:center;color:#9aa7b1;font-size:.9rem}
+#cruz{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-size:64px;font-weight:200}
+#stim{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}
+canvas{max-width:100%;border:1px solid var(--linea);background:#fff}

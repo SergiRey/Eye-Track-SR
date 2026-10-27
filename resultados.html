@@ -1,0 +1,10 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Resultados</title><link rel="stylesheet" href="css/estilos.css"></head><body><main style="max-width:820px">
+<h1>Resultados</h1><p>Carga uno o varios archivos <b>gaze_*.csv</b> y elige el estímulo. Todo se procesa en tu navegador.</p>
+<input id="arch" type="file" accept=".csv" multiple>
+<label for="sel">Estímulo</label><select id="sel"></select>
+<label class="chk"><input id="chkMapa" type="checkbox" checked> Mapa de calor</label>
+<label class="chk"><input id="chkRuta" type="checkbox"> Ruta de escaneo (fijaciones numeradas)</label>
+<label class="chk"><input id="chkAoi" type="checkbox" checked> Mostrar AOI</label>
+<p id="info" class="nota"></p><canvas id="cv"></canvas></main>
+<script src="js/config.js"></script><script src="js/fijaciones.js"></script><script src="js/resultados.js"></script></body></html>
